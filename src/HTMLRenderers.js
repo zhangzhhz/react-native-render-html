@@ -150,8 +150,9 @@ export function br (htlmAttribs, children, convertedCSSStyles, passProps) {
     );
 }
 
-export function textwrapper (htmlAttribs, children, convertedCSSStyles, { key }) {
+export function textwrapper (htmlAttribs, children, convertedCSSStyles, passProps) {
+    const { key } = passProps;
     return (
-        <Text key={key} style={convertedCSSStyles}>{ children }</Text>
+        <Text {...passProps} key={key} style={convertedCSSStyles}>{ children }</Text>
     );
 }

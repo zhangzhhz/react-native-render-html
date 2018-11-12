@@ -1,3 +1,4 @@
+# This is a fork of archriss/react-native-render-html to fix the issue that textSelectable does not work for tagName textwrapper.
 # react-native-render-html
 
 An iOS/Android pure javascript react-native component that renders your HTML into 100% native views. It's made to be extremely customizable and easy to use and aims at being able to render anything you throw at it.
